@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{%block contents%}
+<body>
+    <div class="container">
+        <br>
+        <h1> 자세한 내용이예용</h1>
+        <br>
+        <h2>제목 : {{details.title}} </h2>
+        <h6> {{details.pub_date}} </h6>
+        <br>
+        <p>{{details.body}}  </p>
+        <br>
+        <a href="{%url 'home'%}">Home으로 돌아갈래요!</a>
+
+    </div>
+</body>
+{% endblock %}
+
